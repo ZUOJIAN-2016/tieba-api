@@ -60,11 +60,11 @@ if($pathinfo[1]=='post')
     {
         if($method=='POST')
         {
-          $post->new_reply_post($_POST['them_title'],$_POST['content'],$_POST['post_number'],$_POST['pictures'],$_POST['user_name'],$_POST['bar_name'],$_POST['post_time']);
+          $post->new_reply_post($_POST['theme_title'],$_POST['content'],$_POST['post_number'],$_POST['pictures'],$_POST['user_name'],$_POST['bar_name'],$_POST['post_time']);
         }
         elseif($method=='GET')
         {
-            $post->view_reply_post($_GET['themt_title']);
+            $post->view_reply_post($_GET['theme_title']);
         }
     }
     elseif($pathinfo[2]=='theme_post')
